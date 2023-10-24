@@ -1,0 +1,4 @@
+export const INPUT_STANDARD = "INPUT_STANDARD";
+export const SELECT_INPUT = "SELECT_INPUT";
+export const TEXT_FIELD_INPUT = "TEXT_FIELD_INPUT";
+export const PASSWORD_INPUT = "PASSWORD_INPUT";
