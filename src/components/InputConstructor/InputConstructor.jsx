@@ -8,7 +8,8 @@ import {
     INPUT_STANDARD, 
     PASSWORD_INPUT, 
     SELECT_INPUT, 
-    TEXT_FIELD_INPUT 
+    TEXT_FIELD_INPUT,
+    RENDER
 } from "../../const/inputTypes";
 
 export const InputConstructor = ({
@@ -136,6 +137,14 @@ export const InputConstructor = ({
                     size={input.size}
                 />
             )
+        }
+        case RENDER: {
+            return input.render ? 
+                input.render({ 
+                    values,
+                    onChange,
+                    errors
+                })   : null
         }
         default:
             return null;
