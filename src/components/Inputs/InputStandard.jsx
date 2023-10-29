@@ -48,7 +48,7 @@ export const InputStandard = ({
                     htmlFor={id}
                     variant="outlined"
                 >
-                    {labelText}
+                    {labelText}{required ? " *" : ""}
                 </InputLabel>
                 <OutlinedInput
                     label={labelText}

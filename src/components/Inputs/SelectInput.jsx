@@ -49,7 +49,7 @@ export const SelectInput = ({
                     htmlFor={id}
                     variant="outlined"
                 >
-                    {labelText}
+                    {labelText}{required ? " *" : ""}
                 </InputLabel>
                 <Select
                     label={labelText}
